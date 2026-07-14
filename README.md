@@ -1,11 +1,11 @@
 # Multi-Agent Data Pipeline
 
-[![CI](https://github.com/Raviteja-6241/multi-agent-data-pipeline/actions/workflows/ci.yml/badge.svg)](https://github.com/Raviteja-6241/multi-agent-data-pipeline/actions)
+[![CI](https://github.com/Ravitejap25/multi-agent-data-pipeline/actions/workflows/ci.yml/badge.svg)](https://github.com/Ravitejap25/multi-agent-data-pipeline/actions)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue)](https://www.python.org/)
 [![CrewAI](https://img.shields.io/badge/framework-CrewAI-orange)](https://www.crewai.com/)
 
 > **Part of the Business Ops Agent Suite** — Stage 1: Intake.
-> Downstream: [ticket-triage-agent](https://github.com/Raviteja-6241/ticket-triage-agent)
+> Downstream: [ticket-triage-agent](https://github.com/Ravitejap25/ticket-triage-agent)
 
 A **3-agent, agentic AI pipeline** that extracts raw business data, validates its quality, and produces an executive-ready markdown report — with zero manual intervention between steps.
 
@@ -15,7 +15,7 @@ Built to demonstrate how agentic AI can be applied to real business systems anal
 
 This repo is Stage 1 in a connected suite of agents. The Validator Agent here
 exports its findings as `output/issues.json`, following a shared schema
-(documented in the downstream [`ticket-triage-agent`](https://github.com/Raviteja-6241/ticket-triage-agent)
+(documented in the downstream [`ticket-triage-agent`](https://github.com/Ravitejap25/ticket-triage-agent)
 repo's `ISSUE_SCHEMA.md`), which the Ticket Triage Agent consumes directly to
 classify and route each issue.
 
@@ -63,7 +63,7 @@ Agents run **sequentially**, each passing context to the next via CrewAI's task-
 ### 1. Clone and set up environment
 
 ```bash
-git clone https://github.com/Raviteja-6241/multi-agent-data-pipeline.git
+git clone https://github.com/Ravitejap25/multi-agent-data-pipeline.git
 cd multi-agent-data-pipeline
 python -m venv venv
 source venv/bin/activate      # Windows: venv\Scripts\activate
